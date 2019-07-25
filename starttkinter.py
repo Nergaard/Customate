@@ -20,20 +20,21 @@ def create_Window():
     window2.attributes('-fullscreen', True)
     window2.title("Butikkomaten")
 
-    velk = Label(window2, text = "Skriv inn hvilken vare du mener vi mangler", bg = "white")
+    velk = Label(window2, text = "Skriv inn hvilken vare du mener vi mangler",font=(None, 25))
     velk.place(relx=0.5, rely=0.3, anchor = CENTER)
-    velk2 = Label(window2, text = "Kanskje er det flere som savner den samme varen?", bg = "white")
-    velk2.place(relx=0.5, rely=0.33, anchor = CENTER)
-    velk3 = Label(window2, text = "Hvis mange kunder mener at vi mangler noe vil vi sørge for at den blir lagt til i sortimentet",bg = "white")
-    velk3.place(relx=0.5, rely=0.36, anchor = CENTER)
+    velk2 = Label(window2, text = "Kanskje er det flere som savner den samme varen?",font=(None, 25))
+    velk2.place(relx=0.5, rely=0.4, anchor = CENTER)
+    velk3 = Label(window2, text = "Hvis mange kunder mener at vi mangler noe vil vi sørge for at den blir lagt til i sortimentet",font=(None, 25))
+    velk3.place(relx=0.5, rely=0.5, anchor = CENTER)
     entry = Entry(window2)
-    entry.place(relx=0.5, rely=0.5, anchor = CENTER)
-    knapp2 = Button(window2, image = photo2, border= 0)
-    knapp2.place(relx=0.5, rely=0.7, anchor = CENTER)
+    entry.place(relx=0.5, rely=0.6, anchor = CENTER)
+    knapp2 = Button(window2, image = photo2, border= 0, command=send_item)
+    knapp2.place(relx=0.5, rely=0.8, anchor = CENTER)
     window.destroy()
 
 def send_item():
     print("Seems to work")
+    #Write code to send information to database
 
 
 knapp = Button(window, image = photo, border= 0, command=create_Window)
