@@ -32,10 +32,20 @@ def last_page():
     window3.attributes('-fullscreen', True)
     window3.title("Butikkomaten")
 
-    ny = Label(window3, text = "Oensker du aa legge til et nytt ønske?",font=(None, 25))
+    ny = Label(window3, text = "Ønsker du å legge til flere ønsker?",font=(None, 25))
     ny.place(relx=0.5, rely=0.3, anchor = CENTER)
-    ja = Button(window3, text = "JA", border= 0, command=first_window)
-    ja.place(relx=0.5, rely=0.8, anchor = CENTER)
+    ja = Button(window3, text = "JA", border= 0, command=create_Window)
+    ja.place(relx=0.4, rely=0.8, anchor = CENTER)
+    nei = Button(window3, text = "NEI", border= 0, command=thank_window)
+    nei.place(relx=0.6, rely=0.8, anchor = CENTER)
+
+def thank_window():
+    window4 = Toplevel()
+    window4.attributes('-fullscreen', True)
+    window4.title("Butikkomaten")
+
+    ny = Label(window4, text = "Takk for din tilbakemelding!",font=(None, 30))
+    ny.place(relx=0.5, rely=0.3, anchor = CENTER)
 
 
 def first_window():
@@ -48,6 +58,7 @@ def first_window():
     #generisk button - #btn2 = tkinter.Button(top_frame, text = "Button2", fg = "black", bg = "white").pack()
     #.withdraw()
     #window.configure(background='white')
+
 
 
 window = Toplevel()
