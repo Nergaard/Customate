@@ -35,6 +35,20 @@ def create_Window():
 def send_item():
     print("Seems to work")
     #Write code to send information to database
+    # ---- #
+    last_page()
+
+def last_page():
+    window3 = Toplevel()
+    window3.attributes('-fullscreen', True)
+    window3.title("Butikkomaten")
+
+    ny = Label(window2, text = "Oensker du aa legge til et nytt ønske?",font=(None, 25))
+    ny.place(relx=0.5, rely=0.3, anchor = CENTER)
+    knapp2 = Button(window2, image = photo2, border= 0, command=send_item)
+    knapp2.place(relx=0.5, rely=0.8, anchor = CENTER)
+    window.destroy()
+
 
 
 knapp = Button(window, image = photo, border= 0, command=create_Window)
