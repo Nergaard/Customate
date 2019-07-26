@@ -5,6 +5,7 @@ from tkinter import *
 def send_item():
     print("Seems to work")
     #Write code to send information to database
+    #Getting text from input field = entry.get()
     # ---- #
     last_page()
 
