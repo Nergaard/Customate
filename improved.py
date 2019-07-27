@@ -2,7 +2,16 @@ import tkinter as tk
 from tkinter import PhotoImage
 from tkinter import *
 
+import mysql.connector
 
+mydb = mysql.connector.connect(
+  host="outgearx.com",
+  user="outgearx_admin",
+  passwd="12345",
+  database="outgearx_kiosk"
+)
+
+print(mydb)
 
 class SampleApp(tk.Tk):
     #def __init__(self) is sort of the constructor for python. Self is an instance of the class
@@ -29,6 +38,13 @@ class SampleApp(tk.Tk):
         #Using pack
         self._frame.pack(side="top", fill="both", expand=True)
 
+    def send_toDB(self,text):
+        print("This goin straight to the DB man: "+text)
+        mycursor = mydb.cursor()
+        sql = "INSERT INTO sent (from_user) VALUES (%s);"
+        mycursor.execute(sql, (text, ))
+        mydb.commit()
+
 
 class StartPage(tk.Frame):
     def __init__(self, master):
@@ -50,10 +66,14 @@ class PageOne(tk.Frame):
         velk3.place(relx=0.5, rely=0.5, anchor = CENTER)
         self.entry = tk.Entry(self, font=(None,15))
         self.entry.place(relx=0.5, rely=0.6, anchor = CENTER, height=100, width = 300)
-
         self.photo2=PhotoImage(file="button_send-inn.png")
-        knapp2 = tk.Button(self, image = self.photo2, border= 0, command=lambda: master.switch_frame(PageTwo))
+        knapp2 = tk.Button(self, image = self.photo2, border= 0, command=lambda: self.send_and_change(PageTwo))
         knapp2.place(relx=0.5, rely=0.8, anchor = CENTER)
+
+    def send_and_change(self, page):
+        stri = self.entry.get()
+        app.send_toDB(stri)
+        app.switch_frame(page)
 
 class PageTwo(tk.Frame):
     def __init__(self, master):
