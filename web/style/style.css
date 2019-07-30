@@ -15,7 +15,7 @@ p{
 .grid-item2{
   background-color: #4F5050;
   height: 30vh;
-  font-size: 30px;
+  font-size: 130%;
   border-radius: 10px;
   margin-top: 10%;
   margin-left: 10%;
@@ -35,14 +35,10 @@ p{
   margin-bottom: 10vh;
 }
 
-.header{
-  margin-top: 1.5%;
-  margin-left: 2%;
-}
 
 .grid-item3{
-  grid-column-start: 3;
-  grid-column-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 8;
   background-color: #4F5050;
   border: 1px solid rgba(0, 0, 0, 0.2);
   height: 5vh;
@@ -52,11 +48,49 @@ p{
   text-align: center;
   text-decoration: none;
   display: table;
+  margin: 10% 15% 0% 15%;
 }
 
 #se_mer{
-  position: relative;
-  margin-top: 6%;
+    padding-top:5%;
+    text-align: center;
+}
+
+#logginn{
+  grid-column-start: 6;
+  grid-column-end:7;
+  border: 2px solid #2B3A6D;
+  text-align:center;
+  text-decoration: none;
+  margin-top:5%;
+  background-color: #2B3A6D;
+  color: white;
+  border-radius: 10px;
+  font-size: 80%;
+  padding-top:3%;
+}
+
+#logohead{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+#allerede{
+  grid-column-start: 2;
+  grid-column-end:7;
+  margin-top: 20%;
+  margin-left:5%;
+  margin-right:5%;
+  color:white;
+}
+
+#allerede2{
+  grid-column-start: 2;
+  grid-column-end:7;
+  margin-top: 30%;
+  margin-left:15%;
+  margin-right:15%;
+  color:white;
 }
 
 .grid-item8{
@@ -95,7 +129,7 @@ p{
 }
 
 #footer_logo{
-  font-size: 700%;
+  font-size: 500%;
   padding-top: 3%;
   color: white;
 }
