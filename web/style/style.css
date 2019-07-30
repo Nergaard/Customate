@@ -1,10 +1,12 @@
 body{
   margin:0px;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 p{
   margin:0px;
 }
+
 
 .grid-container {
   display: grid;
@@ -16,9 +18,11 @@ p{
   font-size: 30px;
   border-radius: 10px;
   margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   text-align: center;
-  grid-column-start: 2;
-  grid-column-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 8;
 }
 
 .grid-item1{
@@ -28,24 +32,48 @@ p{
   border: 1px solid rgba(0, 0, 0, 0.2);
   height: 10vh;
   font-size: 30px;
-  text-align: center;
   margin-bottom: 10vh;
 }
 
+.header{
+  margin-top: 1.5%;
+  margin-left: 2%;
+}
+
+.grid-item3{
+  grid-column-start: 3;
+  grid-column-end: 6;
+  background-color: #4F5050;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 5vh;
+  margin-top: 5vh;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: table;
+}
+
+#se_mer{
+  position: relative;
+  margin-top: 6%;
+}
+
 .grid-item8{
-  grid-column-start: 1;
+  grid-column-start: 3;
   grid-column-end: 4;
+  width: 27vw;
 }
 
 .grid-item9{
-  grid-column-start: 5;
+  grid-column-start: 6;
   grid-column-end: 8;
-
+  width: 27vw;
 }
 
 .machine{
-  border: 2px solid #2B3A6D;
-  background-color: #2B3A6D;
+  border: 2px solid #C4C4C4;
+  background-color: #C4C4C4;
   margin-left: 30%;
   height: 50vh;
   border-radius: 10px;
@@ -63,4 +91,11 @@ p{
   background-color: #2B3A6D;
   text-align: center;
   height: 30vh;
+
+}
+
+#footer_logo{
+  font-size: 700%;
+  padding-top: 3%;
+  color: white;
 }
