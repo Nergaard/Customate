@@ -116,7 +116,20 @@ p{
     margin-bottom: 10vh;
     padding: 2% 15%;
     border-radius: 10px;
+    font-family: inherit;
 }
+
+.centered_list{
+  grid-column-start:2;
+  grid-column-end:7;
+  text-align: center;
+  height: 45vh;
+}
+
+.odd{
+  background-color: #C4C4C4;
+}
+
 
 .credentials{
   width: 50vw;

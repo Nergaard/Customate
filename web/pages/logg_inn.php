@@ -16,7 +16,7 @@
   <div class="span2-7-center">
     <input class="credentials" type="password" name="" value="">
   </div>
-  <div class="span3-6-center">
-    <a id="logginnbutton" href="#">LOGG INN</a>
-  </div>
+  <form class="span3-6-center" action="?pg=storeview" method="POST">
+    <input id="logginnbutton" type="submit" name="" value="LOGG INN">
+  </form>
 </div>
