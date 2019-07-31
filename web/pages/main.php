@@ -15,9 +15,9 @@
             <p id="allerede">Hvordan kan våre automater gjøre dine kunder enda lykkeligere?</p>
           </div>
         </div>
-        <a href="" class="grid-item3">
-          <p id="se_mer">SE MER</p>
-        </a>
+        <form class="grid-item3" action="?pg=logginn" method="post">
+          <input id="se_mer" type="submit" name="" value="SE MER">
+        </form>
       </div>
     </section>
   </div>
@@ -29,9 +29,9 @@
             <p id="allerede2">Har du allerede en av våre automater?</p>
           </div>
         </div>
-        <a href="" class="grid-item3">
-          <p id="se_mer">LOGG INN</p>
-        </a>
+        <form class="grid-item3" action="?pg=logginn" method="post">
+          <input id="se_mer" type="submit" name="" value="LOGG INN">
+        </form>
       </div>
     </section>
   </div>
