@@ -12,6 +12,12 @@ p{
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
 }
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto 2%;
+}
+
 .grid-item2{
   background-color: #4F5050;
   height: 30vh;
@@ -35,6 +41,15 @@ p{
   margin-bottom: 10vh;
 }
 
+.grid-logginn{
+  grid-column-start: 1;
+  grid-column-end: 8;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 7vh;
+  font-size: 200%;
+  margin-bottom: 1vh;
+}
 
 .grid-item3{
   grid-column-start: 1;
@@ -51,14 +66,18 @@ p{
   margin: 10% 15% 0% 15%;
 }
 
+#logginn_page{
+  height: 70vh;
+}
+
 #se_mer{
     padding-top:5%;
     text-align: center;
 }
 
 #logginn{
-  grid-column-start: 6;
-  grid-column-end:7;
+  grid-column-start: 7;
+  grid-column-end:8;
   border: 2px solid #2B3A6D;
   text-align:center;
   text-decoration: none;
@@ -66,7 +85,7 @@ p{
   background-color: #2B3A6D;
   color: white;
   border-radius: 10px;
-  font-size: 80%;
+  font-size: 70%;
   padding-top:3%;
 }
 
@@ -91,6 +110,38 @@ p{
   margin-left:15%;
   margin-right:15%;
   color:white;
+}
+
+#logginnbutton{
+    background-color: #C4C4C4;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10vh;
+    padding: 2% 15%;
+    border-radius: 10px;
+}
+
+.credentials{
+  width: 50vw;
+  height: 5vh;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.label{
+  font-size: 200%;
+}
+
+.span3-6-center{
+  grid-column-start: 3;
+  grid-column-end:6;
+  text-align: center;
+}
+
+.span2-7-center{
+  grid-column-start: 2;
+  grid-column-end:7;
+  text-align: center;
 }
 
 .grid-item8{

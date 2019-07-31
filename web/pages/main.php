@@ -1,8 +1,7 @@
 <div class="grid-container">
   <div class="grid-item1">
-
     <section class="header">
-      <div class="grid-container">
+      <div class="grid-container2">
         <p id="logohead">CUSTOMATE</p>
         <a id="logginn" href="#">LOGG INN</a>
       </div>

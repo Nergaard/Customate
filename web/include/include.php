@@ -5,5 +5,5 @@
     $pg = 'main';      // Hvis $_GET['pg'] inneholder en verdi --> Gi variabelen $get innholdet i $_GET['pg']
  }
 
-      if($pg == 'main') include('pages/main.php');
+      if($pg == 'main') include('pages/logg_inn.php');
 ?>
