@@ -7,6 +7,9 @@ p{
   margin:0px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 .grid-container {
   display: grid;
@@ -131,6 +134,38 @@ p{
   margin-left: 5%;
   text-align: center;
   height: 45vh;
+}
+
+.scrollbox{
+  grid-column-start:2;
+  grid-column-end:6;
+  text-align: center;
+  margin: 0 5% 0 5%;
+  height: 50vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+    width: 25vw;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 45vh;
+    border-radius: 10px;
+}
+
+.card_img{
+  height: 60%;
+  background-image: url("/kiosk_3d.jpg");
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.card_descript{
+  height: 40%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .odd{

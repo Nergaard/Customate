@@ -15,7 +15,7 @@
             <p id="allerede">Hvordan kan våre automater gjøre dine kunder enda lykkeligere?</p>
           </div>
         </div>
-        <form class="grid-item3" action="?pg=logginn" method="post">
+        <form class="grid-item3" action="?pg=showcustom" method="post">
           <input id="se_mer" type="submit" name="" value="SE MER">
         </form>
       </div>
