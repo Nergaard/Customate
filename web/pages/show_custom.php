@@ -19,4 +19,6 @@
                 <div class="card"> <div class="card_img"> </div> <div class="card_descript"> Forenkle tilbakemeldinger fra kunder! <br> Customate leverer automater <br> som gir kundene dine en <br> sømløs måte å gi din <br> virsomhet tilbakemeldinger. </div> </div>
                   <div class="card"> <div class="card_img"> </div> <div class="card_descript"> Forenkle tilbakemeldinger fra kunder! <br> Customate leverer automater <br> som gir kundene dine en <br> sømløs måte å gi din <br> virsomhet tilbakemeldinger. </div> </div>
 </div>
+  <a id="left-scrolly" type="button"><</a>
+  <a id="right-scrolly" type="button">></a>
 </div>
