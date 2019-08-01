@@ -36,6 +36,17 @@ p{
   grid-column-end: 8;
 }
 
+.big-screen{
+  background-color: #4F5050;
+  height: 50vh;
+  font-size: 130%;
+  border-radius: 10px;
+  margin: 5% 5% 0 5%;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
 .grid-item1{
   grid-column-start: 1;
   grid-column-end: 8;
@@ -44,6 +55,15 @@ p{
   height: 10vh;
   font-size: 30px;
   margin-bottom: 10vh;
+}
+
+.big-screen-item{
+  grid-column-start: 1;
+  grid-column-end: 8;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 10vh;
+  font-size: 30px;
 }
 
 .grid-logginn{
@@ -117,6 +137,15 @@ p{
   margin-top: 30%;
   margin-left:15%;
   margin-right:15%;
+  color:white;
+}
+
+#big-screen{
+  grid-column-start: 1;
+  grid-column-end:8;
+  margin-top: 5%;
+  margin-left:5%;
+  margin-right:5%;
   color:white;
 }
 
@@ -319,6 +348,25 @@ p{
   width: 27vw;
 }
 
+.top-right-button{
+  grid-column-start: 7;
+  grid-column-end:8;
+
+}
+
+.button-inside{
+  border: 2px solid #2B3A6D;
+  text-align:center;
+  text-decoration: none;
+  margin-top:5%;
+  background-color: #2B3A6D;
+  color: white;
+  border-radius: 10px;
+  font-size: 70%;
+  padding-top:3%;
+  width: 20vw;
+}
+
 .machine{
   border: 2px solid #C4C4C4;
   background-color: #C4C4C4;
@@ -332,6 +380,15 @@ p{
   background-color: #2B3A6D;
   margin-right: 30%;
   height: 50vh;
+  border-radius: 10px;
+}
+
+.big-machine{
+  border: 2px solid #2B3A6D;
+  background-color: #2B3A6D;
+  margin:0 15% 0 15%;
+  height: 60vh;
+  margin-top: 1vh;
   border-radius: 10px;
 }
 

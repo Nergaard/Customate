@@ -9,4 +9,5 @@
       if($pg == 'logginn') include('pages/logg_inn.php');
       if($pg == 'storeview') include('pages/store_overview.php');
       if($pg == 'showcustom') include('pages/show_custom.php');
+      if($pg == 'kontakt') include('pages/kontakt.php');
 ?>

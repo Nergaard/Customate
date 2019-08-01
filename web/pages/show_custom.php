@@ -3,7 +3,9 @@
     <section class="header">
       <div class="grid-container2">
         <p id="logohead">CUSTOMATE</p>
-        <a id="logginn" href="#">LOGG INN</a>
+        <form class="top-right-button" action="?pg=kontakt" method="post">
+          <input class="button-inside" type="submit" name="" value="KONTAKT OSS">
+        </form>
       </div>
     </section>
   </div>
