@@ -10,6 +10,7 @@ p{
 ::-webkit-scrollbar {
     display: touch;
     display: none;
+
 }
 
 .grid-container {
@@ -141,7 +142,9 @@ p{
 #right-scrolly{
   grid-column-start: 7;
   grid-column-end: 8;
-
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 50%;
 }
 
 .centered_list{
