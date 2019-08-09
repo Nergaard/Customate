@@ -40,10 +40,32 @@ class SampleApp(tk.Tk):
 
     def send_toDB(self,text):
         print("This goin straight to the DB man: "+text)
+        #Converting intered text to standarized format and checking if it exists in the DB
+        from_user = text.lower()
+
         mycursor = mydb.cursor()
-        sql = "INSERT INTO sent (from_user) VALUES (%s);"
-        mycursor.execute(sql, (text, ))
-        mydb.commit()
+        sql = "SELECT * FROM store WHERE item= %s;"
+        mycursor.execute(sql, (from_user,))
+        result = mycursor.fetchall()
+
+        instances = len(result)
+
+        if instances != 0:
+            number = result[0][1]+1
+            print(from_user, number)
+            mycursor2 = mydb.cursor()
+            sql = "UPDATE store SET instances = %s WHERE item = %s;"
+            mycursor.execute(sql, (number,from_user))
+            mydb.commit()
+        else:
+            #Sending to DB
+            mycursor2 = mydb.cursor()
+            sql = "INSERT INTO store (item, instances) VALUES (%s, %s);"
+            mycursor.execute(sql, (from_user,1 ))
+            mydb.commit()
+
+
+
 
 
 class StartPage(tk.Frame):

@@ -6,7 +6,7 @@
 ?>
 
 <!--This is the main wrapper. This has a reference to the file include. Include dictates the content that will be shown inside
-the wrapper.--> 
+the wrapper.-->
 <main class="main_wrapper">
 		<?php include('include/include.php'); ?>
 </main>

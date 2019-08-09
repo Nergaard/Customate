@@ -3,7 +3,9 @@
     <section class="header">
       <div class="grid-container2">
         <p id="logohead">CUSTOMATE</p>
-        <a id="logginn" href="#">LOGG INN</a>
+        <form class="top-right-button" action="?pg=logginn" method="post">
+          <input class="topbutton" type="submit" name="" value="LOGG INN">
+        </form>
       </div>
     </section>
   </div>

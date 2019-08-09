@@ -7,6 +7,7 @@ p{
   margin:0px;
 }
 
+
 ::-webkit-scrollbar {
     display: touch;
     display: none;
@@ -103,7 +104,7 @@ p{
   margin: 10% 15% 0% 30%;
 }
 
-#logginn{
+.topbutton{
   grid-column-start: 7;
   grid-column-end:8;
   border: 2px solid #2B3A6D;
@@ -114,7 +115,7 @@ p{
   color: white;
   border-radius: 10px;
   font-size: 70%;
-  padding-top:3%;
+  padding:3% 10% 3% 10%; 
 }
 
 #logohead{
