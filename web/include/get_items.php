@@ -2,7 +2,7 @@
     class GET {
         public function fetch_items() {
             global $pdo;
-            $query = $pdo->prepare("SELECT item FROM store");
+            $query = $pdo->prepare("SELECT item FROM store ORDER BY instances DESC");
             $query->execute();
             $count = count($query);
             foreach ($query as $this_row) {
@@ -12,7 +12,7 @@
 
         public function fetch_numbers(){
             global $pdo;
-            $query = $pdo->prepare("SELECT instances FROM store");
+            $query = $pdo->prepare("SELECT instances FROM store ORDER BY instances DESC");
             $query->execute();
             $count = count($query);
             foreach ($query as $this_row) {

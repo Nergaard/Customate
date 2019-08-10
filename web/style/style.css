@@ -1,6 +1,7 @@
 body{
   margin:0px;
   font-family: 'Reem Kufi', sans-serif;
+  overflow-y: hidden;
 }
 
 p{
@@ -115,7 +116,7 @@ p{
   color: white;
   border-radius: 10px;
   font-size: 70%;
-  padding:3% 10% 3% 10%; 
+  padding:3% 10% 3% 10%;
 }
 
 #logohead{
@@ -183,7 +184,8 @@ p{
   grid-column-end:7;
   margin-left: 5%;
   text-align: center;
-  height: 45vh;
+  height: 46vh;
+  overflow-y: hidden;
 }
 
 .scrollbox{
@@ -232,11 +234,12 @@ p{
   grid-column-start:7;
   grid-column-end:8;
   text-align: center;
-  height: 45vh;
+  height: 46vh;
   margin-left: 0;
   margin-right: 10%;
   padding-left: 0;
   list-style-type:none;
+  overflow-y: hidden;
 }
 
 
