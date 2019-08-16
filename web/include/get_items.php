@@ -1,8 +1,8 @@
 <?php
     class GET {
-        public function fetch_items() {
+        public function fetch_items($username) {
             global $pdo;
-            $query = $pdo->prepare("SELECT item FROM store ORDER BY instances DESC");
+            $query = $pdo->prepare("SELECT item FROM $username ORDER BY instances DESC");
             $query->execute();
             $count = count($query);
             foreach ($query as $this_row) {
@@ -10,9 +10,10 @@
             }
         }
 
-        public function fetch_numbers(){
+        public function fetch_numbers($username){
             global $pdo;
-            $query = $pdo->prepare("SELECT instances FROM store ORDER BY instances DESC");
+            $query = $pdo->prepare("SELECT instances FROM $username ORDER BY instances DESC");
+
             $query->execute();
             $count = count($query);
             foreach ($query as $this_row) {

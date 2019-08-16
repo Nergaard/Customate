@@ -1,4 +1,6 @@
 <?php
+  session_start();
+  $user = $_SESSION['u_name'];
   include_once('include/get_items.php');
   $list = NEW GET();
  ?>
@@ -14,13 +16,15 @@
       </div>
     </section>
   </div>
+
   <!-- This is how the list should be constructed, but you need to write a php-method to fetch the data and build the list-->
   <ol class="centered_list">
-    <?php $list->fetch_items() ?>
+
+    <?php $list->fetch_items($user) ?>
   </ol>
 
     <ul class="next_list">
-      <?php $list->fetch_numbers() ?>
+      <?php $list->fetch_numbers($user) ?>
     </ul>
 
   </div>

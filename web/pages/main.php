@@ -1,3 +1,7 @@
+<?php session_start();
+$_SESSION['u_name']='CUSTOMATE';
+?>
+
 <div class="grid-container">
   <div class="grid-item1">
     <section class="header">
